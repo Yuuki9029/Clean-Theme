@@ -28,7 +28,7 @@ ul{
 }
 /* Header */
 .wrapper{
-    background: url(/images/bg.png) no-repeat;
+    background: url(../images/bg.png) no-repeat;
     background-size: cover;
     -moz-background-size:  cover;
     -webkit-background-size: cover;
@@ -56,7 +56,7 @@ ul{
     clear: both;
 }
 .header-logo{
-    background: url(/images/logo.gif) no-repeat;
+    background: url(../images/logo.gif) no-repeat;
     width: 151px;
     height: 38px;
     text-indent: -999999px;
@@ -65,6 +65,8 @@ ul{
 }
 .header-right{
     float: right;
+}
+.header-right form{
     position: relative;
 }
 .search-field{
@@ -72,10 +74,11 @@ ul{
     background: #f6f6f6;
     width: 217px;
     height: 28px;
+    vertical-align: top;
 }
 .search-button {
-    background: url(/images/search-btn.png) no-repeat;
-    border: none;
+    background: url(../images/search-btn.png) no-repeat;
+    border: 0;
     position: absolute;
     right: 1px;
     top: 2px;
@@ -174,6 +177,7 @@ ul{
 /* Slide Show */
 .slide-show{
     position: relative;
+    cursor: w-resize;
 }
 .slide-image{
     max-width: 959px;
@@ -183,7 +187,7 @@ ul{
     vertical-align: top;
 }
 .slide-content{
-    max-width: 305px;
+    width: 305px;
     height: 100%;
     background: rgba(0, 0, 0,0.5);
     position: absolute;
@@ -192,6 +196,7 @@ ul{
     color: #ffffff;
     padding: 57px 29px 0px 33px;
 }
+
 .slide-heading{
     padding-bottom: 31px;
 }
@@ -207,8 +212,32 @@ ul{
 .info-link a:hover{
     color: #000000;
 }
-/* Slide button */
-
+@media screen and (max-width: 960px){
+    .container{
+        width: 100%;
+    }
+    .slide-image{
+        width: 100%;
+        height: auto;
+    }
+    .slide-content{
+        width: 30%;
+        padding: 30px 20px 0 30px;
+    }
+    .slide-heading{
+        padding-bottom: 15px;
+    }
+    .slide-info p{
+        padding-bottom: 10px;
+    }
+    .slide-image{
+        width: 100%;
+    }
+    .slide-image img{
+        width: 100%;
+        height: auto;
+    }
+}
 /* Emd Slide */
 /* Main Content */
 .content::before,
@@ -257,7 +286,7 @@ ul{
     margin: 0;
 }
 .side-content .blockquote{
-    background: url(/images/blockquote-icon.gif) no-repeat 0 0;
+    background: url(../images/blockquote-icon.gif) no-repeat 0 0;
 }
 .side-content .blockquote p{
     margin: 0;
