@@ -124,7 +124,7 @@
 }
 .slick-dots li{
     float: left;
-    margin-left: 2px;
+    margin-left: 1px;
 }
 .slick-dots li a{
     display: inline-block;
