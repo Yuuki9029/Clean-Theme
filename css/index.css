@@ -86,6 +86,25 @@ ul{
     height: 23px;
     cursor: pointer;
 }
+.nav-menu{
+    float: right;
+    display: none;
+}
+.nav-menu i{
+    font-size: 2.5em;
+}
+.nav-menu i:hover{
+    color: gray;
+}
+@media screen and (max-width: 640px){
+    .nav-menu {
+        display: unset;
+    }
+    .header-right form{
+        display: none;
+    }
+
+}
 /* End Header Top */
 /* Header Navigation */
 .menu-list ul{
@@ -124,6 +143,26 @@ ul{
 }
 .contact-us a{
     padding: 0 0 0 16px;
+}
+@media screen and (max-width: 640px){
+    .menu-list li{
+        float: none;
+        border: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .menu-list ul{
+        text-align: center;
+        display: none;
+    }
+    .menu-list ul li:hover{
+        background: whitesmoke;
+    }
+    .home a,.service a,.work a,
+    .about-us a,.contact-us a{
+        margin: 0 ;
+        padding: 0;
+    }
 }
 /* End Header Navigation */
 .slide-wrapper{
@@ -173,6 +212,11 @@ ul{
     width: 20px;
     height: 20px;
 }
+@media screen and (max-width: 640px){
+    .slide-top-right{
+        display: none;
+    }
+}
 /* End Slide Top */
 /* Slide Show */
 .slide-show{
@@ -214,7 +258,7 @@ ul{
 }
 @media screen and (max-width: 960px){
     .container{
-        width: 100%;
+        width: 99%;
     }
     .slide-image{
         width: 100%;
@@ -225,10 +269,10 @@ ul{
         padding: 30px 20px 0 30px;
     }
     .slide-heading{
-        padding-bottom: 15px;
+        padding-bottom: 5px;
     }
     .slide-info p{
-        padding-bottom: 10px;
+        padding-bottom: 0px;
     }
     .slide-image{
         width: 100%;
@@ -236,6 +280,26 @@ ul{
     .slide-image img{
         width: 100%;
         height: auto;
+    }
+    .info-link{
+        padding-top: 5px;
+    }
+}
+@media screen and (max-width: 800px){
+    .slide-content{
+        width: 50%;
+        padding: 10px 5px 0 10px;
+    }
+}
+@media screen and (max-width: 530px){
+    .slide-content{
+        width: 100%;
+        padding: 5px;
+    }
+    .slide-info p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 /* Emd Slide */
@@ -299,6 +363,28 @@ ul{
     margin: 0;
     font-style: italic;
 }
+@media screen and (max-width: 800px){
+    .side-content{
+        width: 50%;
+        float: left;
+    }
+    .main-content{
+        width: 50%;
+        float: left;
+        padding-right: 10px; 
+    }
+}
+@media screen and (max-width: 390px){
+    .side-content{
+        width: 100%;
+        float: none;
+    }
+    .main-content{
+        width: 100%;
+        float: none;
+        padding-right: 10px;
+    }
+}
 /* End Main */
 /* Footer */
 .footer{
@@ -342,4 +428,16 @@ ul{
 }
 .footer-right p{
     margin: 0;
+}
+@media screen and (max-width: 390px){
+
+    .footer-left{
+        float: none;
+    }
+    .footer-right{
+        float: none;
+    }
+    .footer{
+        text-align: center;
+    }
 }

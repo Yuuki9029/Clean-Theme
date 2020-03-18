@@ -141,8 +141,3 @@
 .slick-active button{
     background-color: #ffffff;
 }
-@media screen and (max-width: 960px){
-    button{
-        display: none;
-    }
-}
